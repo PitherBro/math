@@ -69,20 +69,24 @@ def genNumber(minMax = (2,100)):
     return initNum
 def genMenuSelection():
     options = [
-
+        1,2,3,4,5
     ]
     optDisplay = ""
-    for i in options:
-        pass
+    for i in range(len(options)):
+        optDisplay += f"{i}: {options[i]}\n"
+    return optDisplay
 
-
-
+def selectMenu():
+    print(genMenuSelection())
 
 
 
 if __name__ == "__main__":
     checkProgDirs()
-    ask = int(input("how big of a number?\nMust be greater than 2."))
+    ask =0
+    while ask < 2:
+        selectMenu()
+        ask = int(input("how big of a number?\nMust be greater than 2."))
     for x in range(ask):
         num = genNumber()
         runMathFunc(num)
