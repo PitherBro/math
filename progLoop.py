@@ -69,11 +69,11 @@ def genNumber(minMax = (2,100)):
     return initNum
 def genMenuSelection():
     options = [
-        
+
     ]
     optDisplay = ""
     for i in options:
-
+        pass
 
 
 

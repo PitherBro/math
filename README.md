@@ -27,10 +27,12 @@ I have to 🛠️ some of it to make it work, and will probably meld it more int
 <br>
 
 ## nav
-- [Some-Histories-and-Explination-of-Project](#Some-Histories-and-Explination-of-Project) 
+- [Some-Histories-and-Explination-of-Project](#histories-and-explination-of-project) 
 - [General Goals](#General-Goals)
-- [progLoop.py](#progLoop.py)
-- [plotGraph.py](#plotGraph.py)
+- ### Files
+  - [progInit.py](#proginit)
+  - [progLoop.py](#progloop)
+  - [plotGraph.py](#plotgraph)
 ***
 My main goals are in   
 <strong>High Priority</strong>
@@ -38,8 +40,10 @@ My main goals are in
 ***
 
 ### [Navigation Bar](#nav)
+
 # Dependencies 💣️
 - ### python3 -- embedded/zipped can be added for further portablitlity
+  - ### [download_pyZip](./langs/python-3.10.8-embed-amd64.zip)
 - ### a web browser -- WebUI comming soon
 - ### command line knowledge -- .sh and .bat autoRun files soon
 
@@ -48,6 +52,7 @@ My main goals are in
 ***
 
 ### [Navigation Bar](#nav)
+
 # High-Priority 
 - link the generate file function to UI
 - link the view graph to graphPlot function via a table of selections
@@ -55,6 +60,7 @@ My main goals are in
 ***
 
 ### [Navigation Bar](#nav)
+
 # General-Goals
 - unify into a configeration.json file.
 - add more menus to console and HTML
@@ -62,7 +68,8 @@ My main goals are in
 ***
 
 ### [Navigation Bar](#nav)
-# progInit.py
+
+# progInit
 ## The launchpad of the program and it's general steps
 - redirect current modules to the main starting point.
 - steps
@@ -75,7 +82,8 @@ My main goals are in
 ***
 
 ### [Navigation Bar](#nav)
-# progLoop.py
+
+# progLoop
 ## the main loop of the program
 - console command line math function takes arguments from an HTML UI interface, or the console.
   - console works, it asks for a number of times to make a random selection
@@ -89,7 +97,7 @@ My main goals are in
 ***
 
 ### [Navigation Bar](#nav)
-# plotGraph.py
+# plotGraph
 - does what it says simply.
   - takes obj contained in save folders.
   - console can launch all, do not do with a lot in there
@@ -102,7 +110,8 @@ My main goals are in
 ***
 
 ### [Navigation Bar](#nav)
-# Some-Histories-and-Explination-of-Project
+
+# Histories-and-Explination-of-Project
 The AI world has always interested me and i've recently ventured to explore it.
 
 </body>
