@@ -1,7 +1,7 @@
 ***
-Mission Start Date:  <strong>Mar 22, 9:42 PM</strong><br> 
+Mission Start Date(started programming):  <strong>Mar 22, 9:42 PM</strong><br> 
 
-Deadline: <strong> Mar 24, 8:30am</strong>
+Deadline(I run out of free time): <strong> Mar 24, 8:30am</strong>
 
 To clarify any inconsistancies in work time ~24hrs - ~36hrs.
 - the math function(3x+1) used in the prgroam is recycled from an earlier project i did for fun [see Histories](#histories-and-explination-of-project).
@@ -95,6 +95,7 @@ My main goals are in
 ### [Navigation Bar](#nav)
 
 # High-Priority 
+- make everything presentable, readme, code, assessability.
 - link the generate file function to UI
 - link the view graph to graphPlot function via a table of selections
 <br><br>
