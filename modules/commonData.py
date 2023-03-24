@@ -21,10 +21,12 @@ import random as rand
 
 root = Path(os.path.dirname( __file__ )).parent
 savePath = root/"saves"
+progInitPath = root/'progInit.py'
 #
 progDirs = [
     root,
-    savePath
+    savePath,
+    progInitPath
 ]
 
 saveObj = {
