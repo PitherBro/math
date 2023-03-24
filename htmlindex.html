@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JSON Files Grid</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script> 
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 1rem;
+        margin: 1rem;
+      }
+      .grid-item {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        text-align: center;
+      }
+      .grid-item:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <script type="text/pyscript">
+        import os
+        import sys
+        root = os.path.join(os.path.dirname(__file__)
+        sys.path.append(root, "pyMod"))
+        from glob import glob
+        from pyMod.plotGraph import plot_graph
+        
+        # Replace "/path/to/py/saves" with the actual path to the "saves" directory
+        dir = root/"/pyMod/saves"
+        files = glob(os.path.join(dir, "*.json"))
+        for file in files:
+          filename = os.path.basename(file)[:-5]
+          print(f'<div class="grid-item" onclick="plot_graph(\'{file}\')">{filename}</div>')
+      </script>
+    </div>
+    <script>
+      function plotGraph(file) {
+        // Use whatever method you prefer to execute Python code from JavaScript,
+        // passing the file location as a parameter to the "plotGraph" function.
+      }
+    </script>
+  </body>
+</html>

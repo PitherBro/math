@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Graph Viewer</title>
+</head>
+<body>
+  <h1>Graph Viewer</h1>
+  <div id="grid"></div>
+
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
+  <script>
+    const plotGraph = PyScript.import('plotGraph');
+
+    // Retrieve list of files from pyMod/saves directory
+    const loadGraphs = async () => {
+      const response = await fetch('pyMod/saves');
+      const files = await response.json();
+      return files.filter(file => file.endsWith('.json'));
+    };
+
+    // Generate grid layout with file names as cells
+    const generateGrid = async () => {
+      const files = await loadGraphs();
+      const grid = document.getElementById('grid');
+      const rows = Math.ceil(files.length / 3);
+      let index = 0;
+      for (let i = 0; i < rows; i++) {
+        const row = document.createElement('div');
+        row.className = 'row';
+        for (let j = 0; j < 3; j++) {
+          if (index >= files.length) break;
+          const file = files[index];
+          const cell = document.createElement('div');
+          cell.className = 'cell';
+          cell.textContent = file;
+          cell.addEventListener('click', () => plotGraph.plot_graph(file));
+          row.appendChild(cell);
+          index++;
+        }
+        grid.appendChild(row);
+      }
+    };
+
+    generateGrid();
+  </script>
+</body>
+</html>
