@@ -12,16 +12,16 @@ file util,
 processor,
 library groupings for modules 
 ---- trust me when you cut down on libs, you save some space.
-excessive they may say, but neat, beautiful, clean and readable.
+excessive it may be, but neat, beautiful, clean and readable = good code.
 '''
 import os,sys,json, shutil
 from pathlib import Path
 import random as rand
 
 
-root = Path(os.path.dirname( __file__ ))
+root = Path(os.path.dirname( __file__ )).parent
 savePath = root/"saves"
-
+#
 progDirs = [
     root,
     savePath
@@ -38,20 +38,25 @@ graphObj = {
     "name": saveObj["number"],
     "results": saveObj["list"]
 }
+#should delete a 
+#by default cleans up the save files
 def cleanPath(location=savePath):
+    #print(location)
     os.removedirs(location)
 
+#check if each program directory requiered to oppereate exists.
 def checkProgDirs():
+
     for d in progDirs:
         if os.path.exists(d):
             pass
         else:
             os.mkdir(d)
 
-'''
+def getTUF():
+    '''
 gets the current directory disk usage
 '''
-def getTUF():
     total, used, free = shutil.disk_usage(root)
 
 

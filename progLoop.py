@@ -107,7 +107,16 @@ returns choice as index selection
     return ask
 
 def processMenu(choice=0):
+    options = genMenuSelection().split('\n')
+
+    if choice == 0:
+        pass
+    options[choice]
     pass
+
+#should just do some checks
+#migrate program to init.
+#build logic tree
 if __name__ == "__main__":
     checkProgDirs()
     ask =0
@@ -121,7 +130,11 @@ if __name__ == "__main__":
     #print(sys.argv)    
     #print(sys.path)
     #pass
-    cleanPath()
+    ask = input("remove calculation data? may require admin prvilage(y/n)") or "n"
+    if ask == 'n':
+        pass
+    if ask == 'y':
+        cleanPath()
     
 
     #print(json.loads(json.dumps(output)))

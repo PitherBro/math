@@ -1,3 +1,4 @@
 #!/bin/python3
-import progLoop
-progLoop.ask
+import progLoop as pl
+
+pl.cleanPath()
