@@ -37,7 +37,6 @@ def func(x=2):
             
         results.append(x)
     return results
-
 def checkPastRuns(num, file="val-{num}.json"):
     if not file:
         isFile = os.path.isfile(savePath/f"val-{num}.json")
@@ -68,6 +67,19 @@ def genNumber(minMax = (2,100)):
         initNum = rand.randint(minMax[0],minMax[1])
         print(f"run{initNum}")
     return initNum
+def genMenuSelection():
+    options = [
+        
+    ]
+    optDisplay = ""
+    for i in options:
+
+
+
+
+
+
+
 if __name__ == "__main__":
     checkProgDirs()
     ask = int(input("how big of a number?\nMust be greater than 2."))
