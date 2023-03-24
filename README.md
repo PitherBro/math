@@ -19,6 +19,31 @@ Not everyithing in here will be done by tommorrow, but it is all within my scope
 
 <br>
 
+
+# As-It-Is
+## most code is documented or outlined, can still be better.
+
+  ### i'm very late for ~~work~~ torture
+  #### it's hard to love a job, when you cant fix things, and its all you were trained to do
+  ***
+  ## i have had fun irregardless of the result.
+- the windows batch file
+  - detects the zipped file under /langs/zips
+  - asks to extract the contents to /langs/python
+  - no matter the answer it tries to run the program.
+  - encountered bug where it does not detect the modules
+    - will need to fix later, probably a system path issue.
+- linux shell file
+  - just runs the program from /bin/python3
+- I Lightly broke the progLoop,
+  - it needs to fully packed and modulateed inside of progInit.py
+  - it does generate and ask for  selection
+  - logic tree is not build
+  - generate random number function exists and works by depositing to /saves
+- plotGraph
+  - works  
+  - do not run with a lot of files in /saves you'll have to close a lot of windows
+
 ***
 UI skills are low, Hence the AI.<br>
 😮‍💨️ if only i had time to focus more on sheek.
@@ -39,30 +64,31 @@ and the framework will probably meld it more into my own thing.
 <br>
 
 ## nav
-- [Some-Histories-and-Explination-of-Project](#histories-and-explination-of-project) 
-- [General Goals](#General-Goals)
-- ### Files
-  - [html/](./html/)
-    - mostly AI generated templates
-    - I patched logic in between and fluffed it the way it needs to be.
-  - [langs/](./langs/)
-    - python.zip - so the program can be run independantly of system
-  - [modules/](./modules/)
-    - additional python or other libraries which may be needed
-    - commonData.py
-      - a controlable way to distibute information between .py modules
-      - will need to fan it out later. 
-  - [sampleRuns/](./sampleRuns/)
-    - a way to demonstrate the program
-    - videos/ - maybe
-    - pictures/ - more than likely
-  - [saves/](./saves/)
-    - where each run of a math function is saved.
-    - will be /data/3x+1/saves when it's better suited.
 
-  - [progInit.py](#proginit)
-  - [progLoop.py](#progloop)
-  - [plotGraph.py](#plotgraph)
+- [Disclaimer 🤚️](#disclaimer-️)
+- [As-It-Is](#as-it-is)
+  - [most code is documented or outlined, can still be better.](#most-code-is-documented-or-outlined-can-still-be-better)
+    - [i'm very late for ~~work~~ torture](#im-very-late-for-work-torture)
+      - [it's hard to love a job, when you cant fix things, and its all you were trained to do](#its-hard-to-love-a-job-when-you-cant-fix-things-and-its-all-you-were-trained-to-do)
+  - [i have had fun irregardless of the result.](#i-have-had-fun-irregardless-of-the-result)
+- [General Outlines 👇️](#general-outlines-️)
+  - [nav](#nav)
+    - [Navigation Bar](#navigation-bar-1)
+- [Dependencies 💣️](#dependencies-️)
+    - [Navigation Bar](#navigation-bar-2)
+- [High-Priority](#high-priority)
+    - [Navigation Bar](#navigation-bar-3)
+- [General-Goals](#general-goals)
+    - [Navigation Bar](#navigation-bar-4)
+- [progInit](#proginit)
+  - [The launchpad of the program and it's general steps](#the-launchpad-of-the-program-and-its-general-steps)
+    - [Navigation Bar](#navigation-bar-5)
+- [progLoop](#progloop)
+  - [the main loop of the program](#the-main-loop-of-the-program)
+    - [Navigation Bar](#navigation-bar-6)
+- [plotGraph](#plotgraph)
+    - [Navigation Bar](#navigation-bar-7)
+- [Histories-and-Explination-of-Project](#histories-and-explination-of-project)
 ***
 My main goals are in   
 <strong>High Priority</strong>
@@ -93,6 +119,7 @@ My main goals are in
 ***
 
 ### [Navigation Bar](#nav)
+
 
 # High-Priority 
 - make everything presentable, readme, code, assessability.

@@ -7,13 +7,11 @@ once all files are loaded they are graphed.
 import matplotlib.pyplot as plt
 from modules.commonData import *
 
-'''
-plots a single graph using python's built in lib pyplot
-graphs follow a Name, #steps taken, and each step Results
-'''
 def plot_graph(saveObj):
     """
-    Plots a graph with the given name, number of steps, and results.
+    Plots a graph with the given name, number of steps, and results.\n
+    plots a single graph using python's built in lib pyplot
+graphs follow a Name, #steps taken, and each step Results
     """
     num_steps = saveObj['#steps']
     results = saveObj['list']
@@ -24,13 +22,12 @@ def plot_graph(saveObj):
     plt.ylabel('Values')
     plt.title(f'Graph {name}')
     plt.show()
-'''
-plots multiple graphs using pyplot
-same fields except this one take s a list of graph objs
-'''
+
 def plot_graphs(saveObjs):
     """
-    Plots multiple graphs with the given names, number of steps, and results as subplots.
+    Plots multiple graphs with the given names, number of steps, and results as subplots.\n
+    plots multiple graphs using pyplot
+same fields except this one take s a list of graph objs
     """
     num_graphs = len(saveObjs)
     num_rows = int(num_graphs / 2) + num_graphs % 2
@@ -60,10 +57,11 @@ def plot_graphs(saveObjs):
     
     plt.tight_layout()
     plt.show()
-'''
+
+def loadGraphs():
+    '''
 scans the Saves directory and returns a list of graph files
 '''
-def loadGraphs():
     return os.listdir(savePath)
 
 files = loadGraphs()
