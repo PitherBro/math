@@ -1,4 +1,14 @@
 ***
+Mission Start Date:  <strong>Mar 22, 9:42 PM</strong><br> 
+
+Deadline: <strong> Mar 24, 8:30am</strong>
+
+To clarify any inconsistancies in work time ~24hrs - ~36hrs.
+- the math function(3x+1) used in the prgroam is recycled from an earlier project i did for fun [see Histories](#histories-and-explination-of-project).
+- it took me a few tries to get it right, i'll probably do the same again.
+
+
+****
 
 ### [Navigation Bar](#nav)
 # Disclaimer 🤚️ 
@@ -6,6 +16,7 @@
 <br>
 Like with any project you can't help but be a little safe.<br>
 Not everyithing in here will be done by tommorrow, but it is all within my scope.
+
 <br>
 
 ***
@@ -43,9 +54,18 @@ My main goals are in
 
 # Dependencies 💣️
 - ### python3 -- embedded/zipped can be added for further portablitlity
-  - ### [download_pyZip](./langs/python-3.10.8-embed-amd64.zip)
-- ### a web browser -- WebUI comming soon
-- ### command line knowledge -- .sh and .bat autoRun files soon
+  - ### [langs/python-embedable](./langs/)
+- ### a web browser
+  - WebUI -- comming soon
+- ### command line knowledge
+- Autorun files
+    - "[run.sh](./run.sh)" and "[run.bat](./run.bat)" -- comming soon
+  - steps
+    - (bonus) check if we have a zip file
+    - extract /langs/python Zip file
+    - make sure it only runs from embeded, we don't want to install it.
+    - clean up zip file if we want it more permanent
+    - start [program](./progInit.py) with extracted python.exe file.
 
 
 <br><br>
