@@ -48,7 +48,6 @@ def checkProgDirs():
         else:
             os.mkdir(d)
 
-
 '''
 gets the current directory disk usage
 '''

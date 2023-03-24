@@ -9,7 +9,7 @@ class HtmlTable:
         self.rows = len(data)-1
         self.cols = len(data[0]) if data else 0
 
-    def generate_html(self):
+    def generate_html(self,):
         html = "<table>"
         for row in range(self.rows):
             html += "<tr>"
@@ -41,14 +41,29 @@ class HtmlTable:
 
 # Example usage
 data = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-    [9, 10, 11],
+{
+"number": 1,
+"#steps": 0,
+"list": []
+},
+{
+"number": 0,
+"#steps": 0,
+"list": []
+},
+{
+"number": 0,
+"#steps": 0,
+"list": []
+},
+{
+"number": 0,
+"#steps": 0,
+"list": []
+},
 ]
 
 table = HtmlTable()
-
 # Add a row with index 2
 #table.add_row([12, 13, 14], index=2)
 

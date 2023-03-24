@@ -10,7 +10,7 @@ this algorithm jaggedly jumps then skips to a 4,2,1 loop...which we stop.
 
 each run is randomly generated and saved as a json file.
 """
-from commonData import *
+from modules.commonData import *
 import math
 from threading import Thread
 
@@ -47,7 +47,6 @@ def checkPastRuns(num, file="val-{num}.json"):
     elif file:
         isFile = os.path.isfile(file)
         return False
-    
 def runMathFunc(initNum):
     r = func(initNum)
     #print(r)

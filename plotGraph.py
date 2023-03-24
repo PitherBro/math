@@ -5,7 +5,7 @@ of json files from folder 'saves'
 once all files are loaded they are graphed.
 '''
 import matplotlib.pyplot as plt
-from commonData import *
+from modules.commonData import *
 
 '''
 plots a single graph using python's built in lib pyplot
