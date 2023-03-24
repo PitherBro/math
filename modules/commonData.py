@@ -38,7 +38,7 @@ graphObj = {
     "name": saveObj["number"],
     "results": saveObj["list"]
 }
-def cleanPath(location):
+def cleanPath(location=savePath):
     os.removedirs(location)
 
 def checkProgDirs():

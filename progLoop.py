@@ -59,42 +59,69 @@ def runMathFunc(initNum):
     saveFile = open(savePath/f'val-{initNum}.json','w')
     print(json.dumps(output,indent=2), file=saveFile)
     saveFile.close()
-def genNumber(minMax = (2,100)):
-    
+def genRandNumber(minMax = (2,100)):
+    '''
+    generates a random number between a Tuple passed,\n
+    checks against saveFile directory to see if number was made before.
+    if it does, it makes a unique one. 
+    '''
     initNum = rand.randint(minMax[0],minMax[1])# int(input("Enter a number greater than 2: "))
     knowns = []
     while checkPastRuns(initNum):
         initNum = rand.randint(minMax[0],minMax[1])
         print(f"run{initNum}")
     return initNum
+
 def genMenuSelection():
+    \
+'''
+simple [index]: {choice},selection\n
+allows easy feed of information.
+'''
     options = [
-        1,2,3,4,5
+        "random",
+        "your number, punk",
+        "see Graph",
+        "see Graphs"
     ]
     optDisplay = ""
     for i in range(len(options)):
-        optDisplay += f"{i}: {options[i]}\n"
+        #formats as single block,
+        #leaves last line clear of new line command
+
+        if i == -1+len(options):
+            optDisplay += f"{i}: {options[i]}"
+        else:
+            optDisplay += f"{i}: {options[i]}\n"
     return optDisplay
 
 def selectMenu():
+    '''
+the call to make a menu call.\n
+returns choice as index selection
+    '''
+    options = genMenuSelection()
+
     print(genMenuSelection())
+    ask = int(input(f"Which opperation we wanting to complete today?[0-{len(options.split())-1}]"))
+    return ask
 
-
-
+def processMenu(choice=0):
+    pass
 if __name__ == "__main__":
     checkProgDirs()
     ask =0
     while ask < 2:
-        selectMenu()
-        ask = int(input("how big of a number?\nMust be greater than 2."))
+        ask = selectMenu()
+        
     for x in range(ask):
-        num = genNumber()
+        num = genRandNumber()
         runMathFunc(num)
     #print(__name__)
     #print(sys.argv)    
     #print(sys.path)
     #pass
-    
+    cleanPath()
     
 
     #print(json.loads(json.dumps(output)))
