@@ -1,11 +1,13 @@
 ***
-Mission Start Date(started programming):  <strong>Mar 22, 9:42 PM</strong><br> 
+Mission Start Date(started programming):  <strong>Mar 22, 9:42 PM????</strong><br> 
 
-Deadline(I run out of free time): <strong> Mar 24, 8:30am</strong>
+Deadline: <strong>we don't know</strong>
 
-To clarify any inconsistancies in work time ~24hrs - ~36hrs.
-- the math function(3x+1) used in the prgroam is recycled from an earlier project i did for fun [see Histories](#histories-and-explination-of-project).
-- it took me a few tries to get it right, i'll probably do the same again.
+## A little history:
+- The math function(3x+1) used in the prgroam is recycled from an earlier project i did for fun [see Histories](#histories-and-explination-of-project).
+- It took me a few tries to get it right, i'll probably do the same again.
+
+
 
 
 ****
@@ -13,32 +15,46 @@ To clarify any inconsistancies in work time ~24hrs - ~36hrs.
 ### [Navigation Bar](#nav)
 # Disclaimer 🤚️ 
     This will update many times
+    This is also just a fun math program.
+    Go crazy you nuts.
 <br>
-Like with any project you can't help but be a little safe.<br>
-Not everyithing in here will be done by tommorrow, but it is all within my scope.
-
+Like with any project you can't help but be a little safe, clean, and clear.<br>
+Not everything in here will be done right away, but it is all within my scope.
 <br>
 
-
+***
 # As-It-Is
 ## most code is documented or outlined, can still be better.
+***
 
-  ### i'm very late for ~~work~~ torture
-  #### it's hard to love a job, when you cant fix things, and its all you were trained to do
+| File| Feature | Command Line | Web UI | status |
+|:-----: |---------------|---------------|---------------|---------------|
+| progLoop| argument Logic| no| no| inprogress|
+| progLoop| cleaner console options| no| no| inprogress|
+| progLoop| create 3x+1 result randomly| yes| no| complete|
+| progLoop| create 3x+1 result selectivly| yes| no| complete|
+| progLoop| choose which option| no| no| inprogress|
+| progLoop| choose a diffrent math problem| no| no| inprogress| 
+| plotGraph| single graph| yes| no| complete|
+| plotGraph| multi graph| yes| no| complete|
+food for thought
+
+    it's hard to love a job, when you cant fix things, and its all you were trained to do
   ***
-  ## i have had fun irregardless of the result.
-- the windows batch file
+  ## I have had fun creating this project.
+- the windows batch file "[run.bat](./run.bat)"
   - detects the zipped file under /langs/zips
   - asks to extract the contents to /langs/python
   - no matter the answer it tries to run the program.
   - encountered bug where it does not detect the modules
     - will need to fix later, probably a system path issue.
-- linux shell file
+- linux shell file "[run.sh](./run.sh)"
   - just runs the program from /bin/python3
+  
 - I Lightly broke the progLoop,
   - it needs to fully packed and modulateed inside of progInit.py
   - it does generate and ask for  selection
-  - logic tree is not build
+  - logic tree 
   - generate random number function exists and works by depositing to /saves
 - plotGraph
   - works  
@@ -68,9 +84,7 @@ and the framework will probably meld it more into my own thing.
 - [Disclaimer 🤚️](#disclaimer-️)
 - [As-It-Is](#as-it-is)
   - [most code is documented or outlined, can still be better.](#most-code-is-documented-or-outlined-can-still-be-better)
-    - [i'm very late for ~~work~~ torture](#im-very-late-for-work-torture)
-      - [it's hard to love a job, when you cant fix things, and its all you were trained to do](#its-hard-to-love-a-job-when-you-cant-fix-things-and-its-all-you-were-trained-to-do)
-  - [i have had fun irregardless of the result.](#i-have-had-fun-irregardless-of-the-result)
+  - [I have had fun creating this project.](#i-have-had-fun-creating-this-project)
 - [General Outlines 👇️](#general-outlines-️)
   - [nav](#nav)
     - [Navigation Bar](#navigation-bar-1)
@@ -98,21 +112,23 @@ My main goals are in
 ### [Navigation Bar](#nav)
 
 # Dependencies 💣️
-- ### python3 -- embedded/zipped can be added for further portablitlity
+- ## python3 -- embedded/zipped can be added for further portablitlity
   - ### [langs/python-embedable](./langs/)
-- ### a web browser
+- ## a web browser
   - WebUI -- comming soon
-- ### command line knowledge
-- Autorun files
+- ## command line knowledge
+  - run a script "run(.sh/.bat)"
+  - allow permision to run
+- ## Autorun files
     - "[run.sh](./run.sh)" and "[run.bat](./run.bat)" -- comming soon
-    - <p> Yes these too will be <p style="font-style: italic;">hand-coded</p>i run linux, and am a Windows 98-etc-Win-10 vet/survivor.
-    - none of it matters though it's a balance between: priciple and convience
-  - steps
+    - <p> Yes these too will be <p style="font-style: italic;">hand-coded</p>I run linux, and am a Windows 98 | ...etc... | Win-10 vet/survivor.
+    - None of it matters though it's a balance between: priciple and convience
+  - Steps (windows)
     - (bonus) check if we have a zip file
-    - extract /langs/python Zip file
-    - make sure it only runs from embeded, we don't want to install it.
-    - clean up zip file if we want it more permanent
-    - start [program](./progInit.py) with extracted python.exe file.
+    - Extract "/langs/python" Zip file
+    - Make sure it only runs from embeded, we don't want to install it.
+    - Clean up zip file if we want it more permanent
+    - Start [program](./progInit.py) with extracted python.exe file.
 
 
 <br><br>
@@ -191,7 +207,9 @@ along with computerphile.
 ***
 There was an episode where they ran over this function(3x+1), since it hit one of my 2 triggers i just needed to play around with it a bit. Then that lead to another program i've yet to find which ran a small simulation of hunter/gathers in a selfish selfless random ratio...computer got warm.
 ***
-Don't worry I keep most valuables backed up, but when i just play around with coding it's just fun.
+Don't worry I keep most valuables backed up, but when i just play around with coding it's just fun.<br>
+Now i just repo everything i can. And catalouge  when i can.
+
 
 
 </body>
