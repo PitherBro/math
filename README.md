@@ -3,6 +3,9 @@ Mission Start Date(started programming):  <strong>Mar 22, 9:42 PM????</strong>
 
 Deadline: <strong>we don't know</strong>
 
+get started with github [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
+
+
 ## A little history:
 - The math function(3x+1) used in the prgroam is recycled from an earlier project i did for fun [see Histories](#histories-and-explination-of-project).
 - It took me a few tries to get it right, i'll probably do the same again.
@@ -27,20 +30,31 @@ Not everything in here will be done right away, but it is all within my scope.
 ## most code is documented or outlined, can still be better.
 ***
 
-| File| Feature | Command Line | Web UI | status |
-|:-----: |---------------|---------------|---------------|---------------|
-| progLoop| argument Logic| no| no| inprogress|
-| progLoop| cleaner console options| no| no| inprogress|
-| progLoop| create 3x+1 result randomly| yes| no| complete|
-| progLoop| create 3x+1 result selectivly| yes| no| complete|
-| progLoop| choose which option| no| no| inprogress|
-| progLoop| choose a diffrent math problem| no| no| inprogress| 
-| plotGraph| single graph| yes| no| complete|
-| plotGraph| multi graph| yes| no| complete|
+
+## Legend
+| Icon | Definition| | Icon | Definition|
+| :-------: | ------------------------------ | ------------------------------ |  ------------------------------ |   ------------------------------ |
+| 🗓️| Future     ||  🗓️| Future |
+| 🛠️| Inprogress ||  🗓️| Future |
+| ✅️| Complete   ||  🗓️| Future |
+
+|   File    | Feature                        | Command Line | Web UI | status     |
+| :-------: | ------------------------------ | ------------ | ------ | ---------- |
+| progLoop  | argument Logic                 | no           | no     | 🛠️ |
+| progLoop  | cleaner console options        | no           | no     | 🛠️ |
+| progLoop  | create 3x+1 result randomly    | yes          | no     | ✅️ |
+| progLoop  | create 3x+1 result selectivly  | yes          | no     | ✅️ |
+| progLoop  | choose which option            | no           | no     | 🛠️ |
+| progLoop  | choose a diffrent math problem | no           | no     | 🛠️ |
+| plotGraph | single graph                   | yes          | no     | ✅️ |
+| plotGraph | multi graph                    | yes          | no     | ✅️ |
 food for thought
 
-    it's hard to love a job, when you cant fix things, and its all you were trained to do
+    it's hard to love a job, when you cant fix things, and its all you were trained to do.
+  
+  Don't worry I love this work.
   ***
+
   ## I have had fun creating this project.
 - the windows batch file "[run.bat](./run.bat)"
   - detects the zipped file under /langs/zips
@@ -80,28 +94,21 @@ and the framework will probably meld it more into my own thing.
 <br>
 
 ## nav
-
 - [Disclaimer 🤚️](#disclaimer-️)
 - [As-It-Is](#as-it-is)
   - [most code is documented or outlined, can still be better.](#most-code-is-documented-or-outlined-can-still-be-better)
+  - [Legend](#legend)
   - [I have had fun creating this project.](#i-have-had-fun-creating-this-project)
 - [General Outlines 👇️](#general-outlines-️)
-  - [nav](#nav)
-    - [Navigation Bar](#navigation-bar-1)
 - [Dependencies 💣️](#dependencies-️)
-    - [Navigation Bar](#navigation-bar-2)
 - [High-Priority](#high-priority)
-    - [Navigation Bar](#navigation-bar-3)
 - [General-Goals](#general-goals)
-    - [Navigation Bar](#navigation-bar-4)
 - [progInit](#proginit)
   - [The launchpad of the program and it's general steps](#the-launchpad-of-the-program-and-its-general-steps)
-    - [Navigation Bar](#navigation-bar-5)
+- [Files](#files)
 - [progLoop](#progloop)
   - [the main loop of the program](#the-main-loop-of-the-program)
-    - [Navigation Bar](#navigation-bar-6)
 - [plotGraph](#plotgraph)
-    - [Navigation Bar](#navigation-bar-7)
 - [Histories-and-Explination-of-Project](#histories-and-explination-of-project)
 ***
 My main goals are in   
@@ -165,6 +172,8 @@ My main goals are in
   - launch server UI
 <br><br>
 ***
+
+# Files
 
 ### [Navigation Bar](#nav)
 
