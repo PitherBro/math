@@ -1,6 +1,6 @@
 ::cooments
 ::unzip"./langs/zip/python-3.10.8-embed-amd64" "./langs/python"
-
+.shel
 set zipPath=%cd%\langs\zips
 set pythonPath=%cd%\langs\python\python.exe
 set zipExtractor=%cd%\modules\7-Zip\7z.exe

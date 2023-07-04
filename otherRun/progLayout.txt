@@ -1,0 +1,15 @@
+puzzle_generator/
+├── configs/
+│   ├── default.json
+│   └── custom.json
+├── data/
+│   └── shapes/
+│       ├── circle.png
+│       ├── square.png
+│       └── triangle.png
+├── modules/
+│   ├── config.py
+│   ├── equation.py
+│   ├── puzzle_generator.py
+│   └── shape.py
+└── main.py

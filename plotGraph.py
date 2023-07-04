@@ -62,7 +62,7 @@ def loadGraphs():
     '''
 scans the Saves directory and returns a list of graph files
 '''
-    return os.listdir(savePath)
+    return os.listdir(sp3xPlusOne)
 
 files = loadGraphs()
 graphs = []

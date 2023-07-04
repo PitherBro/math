@@ -1,0 +1,8 @@
+i wish to propose a math game.
+for starters it will be about a grid of sums.
+a grid is formed from overlapping functions which follow a classic 2+2=4 pattern.
+for referance we can start with a 2d hexagon shape,
+the lines of the math problem would fill in and over lap with another to form a grid in the shape of a hexagon.
+the game objective is to solve each cell of the formula, based on a selection of difficulty [easy,med,hard,insaine]
+a number of cells are prefilled.
+a user can select a shape and number complexity.

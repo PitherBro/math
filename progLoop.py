@@ -56,7 +56,7 @@ def runMathFunc(initNum):
         "list": r
     }
     print(output["number"])
-    saveFile = open(savePath/f'val-{initNum}.json','w')
+    saveFile = open(sp3xPlusOne/f'val-{initNum}.json','w')
     print(json.dumps(output,indent=2), file=saveFile)
     saveFile.close()
 def genRandNumber(minMax = (2,100)):
@@ -79,6 +79,7 @@ simple [index]: {choice},selection\n
 allows easy feed of information.
 '''
     options = [
+        "exit",
         "random",
         "your number, punk",
         "see Graph",
@@ -88,7 +89,7 @@ allows easy feed of information.
     for i in range(len(options)):
         #formats as single block,
         #leaves last line clear of new line command
-
+        
         if i == -1+len(options):
             optDisplay += f"{i}: {options[i]}"
         else:
@@ -114,22 +115,48 @@ def processMenu(choice=0):
     options[choice]
     pass
 
+def isOpts(selection=0):
+    max=len(genMenuSelection())-1
+    if selection >= 0 or selection <=max:
+        return True
+    else:
+        False
+
+
+
+
 #should just do some checks
 #migrate program to init.
 #build logic tree
 if __name__ == "__main__":
+
+    #pre loop execution:
     checkProgDirs()
-    ask =0
-    while ask < 2:
-        ask = selectMenu()
-        
-    for x in range(ask):
-        num = genRandNumber()
-        runMathFunc(num)
     #print(__name__)
     #print(sys.argv)    
     #print(sys.path)
     #pass
+    
+    '''
+    a bit of insainity to chain commands.
+    or handle arguments.
+    lets make the program read forward and backward.
+    chain commands, call again to execute on explosive demand...recursive.
+    
+    '''
+    ask =0
+    opts = []
+
+    while not ask == 0 :
+        ask = int(selectMenu())
+        if isOpts(ask):
+            opts.append(ask)
+        
+    for x in range(opts):
+        num = genRandNumber()
+        runMathFunc(num)
+    
+    
     ask = input("remove calculation data? may require admin prvilage(y/n)") or "n"
     if ask == 'n':
         pass

@@ -11,21 +11,26 @@ can compartamentalize latter
 file util,
 processor,
 library groupings for modules 
----- trust me when you cut down on libs, you save some space.
+-----
+trust me when you cut down on libs, you save some space.
 excessive it may be, but neat, beautiful, clean and readable = good code.
 '''
 import os,sys,json, shutil
 from pathlib import Path
 import random as rand
 
-
+#gets the root directory of app.
 root = Path(os.path.dirname( __file__ )).parent
-savePath = root/"saves"
+savePath = root/"sampleRuns"
+sp3xPlusOne = savePath/'3x+1'
 progInitPath = root/'progInit.py'
+
+
 #
 progDirs = [
     root,
     savePath,
+    sp3xPlusOne,
     progInitPath
 ]
 
@@ -42,9 +47,12 @@ graphObj = {
 }
 #should delete a 
 #by default cleans up the save files
-def cleanPath(location=savePath):
+def cleanPath(location=sp3xPlusOne):
     #print(location)
-    os.removedirs(location)
+    for f in os.listdir(location):
+        if Path.is_file(f):
+            print(f)
+        # os.removedirs(location)
 
 #check if each program directory requiered to oppereate exists.
 def checkProgDirs():

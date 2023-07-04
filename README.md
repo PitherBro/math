@@ -25,6 +25,7 @@ Like with any project you can't help but be a little safe, clean, and clear.<br>
 Not everything in here will be done right away, but it is all within my scope.
 <br>
 
+     aadfa
 ***
 # As-It-Is
 ## most code is documented or outlined, can still be better.
@@ -110,6 +111,7 @@ and the framework will probably meld it more into my own thing.
   - [the main loop of the program](#the-main-loop-of-the-program)
 - [plotGraph](#plotgraph)
 - [Histories-and-Explination-of-Project](#histories-and-explination-of-project)
+  - [Author Note](#author-note)
 ***
 My main goals are in   
 <strong>High Priority</strong>
@@ -176,6 +178,20 @@ My main goals are in
 # Files
 
 ### [Navigation Bar](#nav)
+- html/
+- langs/
+- modules/
+- sampleRuns/
+- saves/
+- shells/
+- bodies.python
+- plotGraph.python
+- progInit.python
+- progLoop.python
+- README.hyperTextProtocol
+- README.markDown
+- run.batch
+- run.shell
 
 # progLoop
 ## the main loop of the program
@@ -215,6 +231,9 @@ numberphile on youtube is great.
 along with computerphile.
 ***
 There was an episode where they ran over this function(3x+1), since it hit one of my 2 triggers i just needed to play around with it a bit. Then that lead to another program i've yet to find which ran a small simulation of hunter/gathers in a selfish selfless random ratio...computer got warm.
+***
+
+## Author Note
 ***
 Don't worry I keep most valuables backed up, but when i just play around with coding it's just fun.<br>
 Now i just repo everything i can. And catalouge  when i can.
