@@ -9,6 +9,9 @@ this is just a fun math problem which yeilds interesting results the larger your
 this algorithm jaggedly jumps then skips to a 4,2,1 loop...which we stop.
 
 each run is randomly generated and saved as a json file.
+
+!!! --- NOTICE --- !!!
+so far runs with a list of numbers as argument inputs for the algorathim to run through.
 """
 from modules.commonData import *
 import math
@@ -77,6 +80,11 @@ def genMenuSelection():
 '''
 simple [index]: {choice},selection\n
 allows easy feed of information.
+1. exit (quit the program loop)
+2. random - generate an execution based of range of (2-100)
+3. user number (user inputs a number for th 3x+1 algo)
+4. see a saved graph ()
+5. see all of the graphs in ./saves folder
 '''
     options = [
         "exit",
@@ -122,39 +130,34 @@ def isOpts(selection=0):
     else:
         False
 
-
-
-
 #should just do some checks
 #migrate program to init.
 #build logic tree
 if __name__ == "__main__":
 
     #pre loop execution:
+    #check the required directories for saveing 3x+1 values to a json file
     checkProgDirs()
     #print(__name__)
     #print(sys.argv)    
     #print(sys.path)
     #pass
     
-    '''
-    a bit of insainity to chain commands.
-    or handle arguments.
-    lets make the program read forward and backward.
-    chain commands, call again to execute on explosive demand...recursive.
-    
-    '''
-    ask =0
-    opts = []
 
+    # the first arg is a menu selection
+    ask =0
+    #rest are required selctions passed in for the first Arg
+    opts = sys.argv[1:]
+
+    #should only run if console arguments are passed.
     while not ask == 0 :
         ask = int(selectMenu())
         if isOpts(ask):
             opts.append(ask)
-        
-    for x in range(opts):
-        num = genRandNumber()
-        runMathFunc(num)
+    
+    for x in opts:
+        #num = genRandNumber()
+        runMathFunc(int(x))
     
     
     ask = input("remove calculation data? may require admin prvilage(y/n)") or "n"

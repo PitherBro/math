@@ -56,7 +56,10 @@ def cleanPath(location=sp3xPlusOne):
 
 #check if each program directory requiered to oppereate exists.
 def checkProgDirs():
-
+    '''
+    Runs through the list of required program directires\n
+    Creates the directory if missing, does nothing if it exists.
+    '''
     for d in progDirs:
         if os.path.exists(d):
             pass
@@ -65,7 +68,10 @@ def checkProgDirs():
 
 def getTUF():
     '''
-gets the current directory disk usage
+Gets the current directory disk usage in Gigabits
+T: total
+U: unused
+F: Free
 '''
     total, used, free = shutil.disk_usage(root)
 

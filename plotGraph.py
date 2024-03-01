@@ -3,7 +3,11 @@
 This module just focuses on loading a set
 of json files from folder 'saves'
 once all files are loaded they are graphed.
+
+!!! --- NOTICE --- !!!
+Need to make sure Matplotlib, and Tkinter is installed before it will run.
 '''
+
 import matplotlib.pyplot as plt
 from modules.commonData import *
 
@@ -16,7 +20,7 @@ graphs follow a Name, #steps taken, and each step Results
     num_steps = saveObj['#steps']
     results = saveObj['list']
     name = saveObj['number']
-    
+
     plt.plot(range(num_steps), results)
     plt.xlabel('Steps')
     plt.ylabel('Values')
@@ -60,20 +64,25 @@ same fields except this one take s a list of graph objs
 
 def loadGraphs():
     '''
-scans the Saves directory and returns a list of graph files
+scans the `./sampleRuns/3x+1/*` directory and returns a list of graph files
 '''
     return os.listdir(sp3xPlusOne)
 
-files = loadGraphs()
-graphs = []
+#the module main
+if __name__ == "__main__":
+    files = loadGraphs()
+    graphs = []
 
 
-print(files)
-for f in files:
-    #print(f)
-    obj = dict(json.load(open(savePath/f)))
-    #print(obj)
-    graphs.append(obj)
+    print(files)
+    for f in files:
+        #print(f)
+        obj = dict(json.load(open(sp3xPlusOne/f)))
+        #print(obj)
+        graphs.append(obj)
 
-# Example usage
-#plot_graphs(graphs)
+
+    # Example usage
+    #plot_graph(graphs[0])
+    # Example usage
+    #plot_graphs(graphs)
